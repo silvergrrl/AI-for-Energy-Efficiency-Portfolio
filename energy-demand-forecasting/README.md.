@@ -1,0 +1,80 @@
+
+# 🔋 Energy Demand Forecasting for Smart Grids / HVAC Optimisation
+
+## 🌍 Overview
+This project predicts short-term energy demand for smart grids and optimises HVAC systems in large buildings using machine learning. Accurate forecasting helps reduce peak loads, improve energy efficiency, and support sustainability goals.
+
+---
+
+## 🏗 Architecture
+![Architecture Diagram](images/energy-demand-architecture.png)
+
+### **Workflow**
+1. **Data Sources**
+   - Smart Meter Data: Real-time consumption patterns.
+   - Weather API: Temperature, humidity, and other factors influencing demand.
+
+2. **Data Preprocessing**
+   - Cleaning missing or noisy data.
+   - Feature engineering: time-of-day, seasonality, occupancy patterns.
+
+3. **Model Training**
+   - Baseline: XGBoost for quick results.
+   - Advanced: LSTM or Transformer-based models for time-series forecasting.
+
+4. **Evaluation**
+   - Metrics: RMSE, MAE to measure forecasting accuracy.
+   - Compare baseline vs advanced models.
+
+5. **Deployment**
+   - Deploy on **Azure Machine Learning** or **Streamlit** for interactive dashboards.
+   - Automate retraining for continuous improvement.
+
+6. **User Interface**
+   - Visual dashboard showing predicted demand curves.
+   - Insights for facility managers and grid operators.
+
+---
+
+## ✅ Features
+- Time-series forecasting for energy demand.
+- Integration of weather and consumption data.
+- Cloud-ready deployment for scalability.
+- Interactive dashboard for visual insights.
+
+---
+
+## 🛠 Tech Stack
+- **Language:** Python  
+- **Libraries:** Pandas, Scikit-learn, TensorFlow/PyTorch  
+- **Cloud:** Azure Machine Learning  
+- **Visualisation:** Streamlit, Matplotlib  
+
+---
+
+## 📈 Impact
+- Reduces peak load and energy waste.
+- Supports EU climate goals and Green AI principles.
+- Demonstrates practical ML skills for smart energy systems.
+
+---
+
+## 📂 Repository Structure
+├── data/                     # Sample datasets or links to external sources
+│   └── raw/                  # Raw data files
+│   └── processed/            # Cleaned and feature-engineered data
+├── notebooks/                # Jupyter notebooks for experiments and EDA
+│   └── 01_data_preprocessing.ipynb
+│   └── 02_model_training.ipynb
+│   └── 03_evaluation.ipynb
+├── src/                      # Source code for production-ready scripts
+│   └── preprocessing.py      # Data cleaning and feature engineering
+│   └── train_model.py        # Model training pipeline
+│   └── evaluate.py           # Evaluation metrics and visualisations
+│   └── deploy.py             # Deployment script (Streamlit/Azure)
+├── images/                   # Architecture diagrams and dashboard screenshots
+├── requirements.txt          # Python dependencies
+├── LICENSE                   # Licence file (MIT recommended)
+├── .gitignore                # Ignore unnecessary files (data, checkpoints)
+└── README.md                 # Project documentation
+
